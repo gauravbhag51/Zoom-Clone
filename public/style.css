@@ -1,0 +1,121 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Shippori Mincho B1', serif;
+    height:100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main{
+    box-sizing: border-box;
+    height: 100vh;
+    display:flex;
+}
+.left{
+    background-color: black;
+    color:white;
+    flex:0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.right{
+    padding:0px 10px;
+    box-sizing: border-box;
+    flex:0.2;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    text-align:center;
+    color:blanchedalmond;
+}
+.chat_box{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    text-align: left;
+}
+.old_messages{
+    margin:5px;
+    flex-grow:1;
+    padding:5px;
+    border-radius: 10px;
+    background-color: rgba(255, 235, 205,0.1);
+}
+.message_container{
+    padding:5px;
+    display: flex;
+    align-items: center;
+    color:blanchedalmond;
+}
+.message_container i{
+    margin:5px;
+}
+#chat_message{
+    background-color: transparent;
+    flex-grow: 1;
+    margin:5px;
+    padding:5px;
+    border-width: 0px 0px 2px 0px;
+    border-color:blanchedalmond;
+    color:blanchedalmond;
+}
+.controls{
+    flex:0.1;
+    display: flex;
+    /* background-color: rgb(43, 40, 40); */
+    justify-content: space-evenly;
+    width:100%;
+}
+.videos{
+    flex:0.9;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#video-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+video{
+    height: 300px;
+    border-radius: 10px;
+    -webkit-transform: scaleX(-1);
+}
+.block{
+    display: flex;
+    flex:0.3;
+    justify-content:center;
+    align-items: center;
+}
+.button{
+    padding:10px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button:hover{
+    background-color: rgb(173, 167, 167);
+    border-radius: 5px;
+    cursor:pointer;
+}
+ul{
+    list-style: none;
+    font-size: 0.8rem;
+}
+#send{
+    cursor: pointer;
+}
